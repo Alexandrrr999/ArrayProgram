@@ -16,3 +16,15 @@ int ThreeArray (string[] Three) // Cчитаем кол-во элементов 
     }
     return count;
 }
+
+void FillArray(string[] NewArray, string[] TransferArray) //Переносим нужные элементы в другой массив
+{
+    for (int i = 0, j = 0; i < NewArray.Length; i++)
+    {
+        if (NewArray[i].Length <= 3 )
+        {
+            TransferArray[j] = NewArray[i];
+            j++;
+        }
+    }
+}
